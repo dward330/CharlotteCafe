@@ -1,0 +1,9 @@
+:host /deep/ .modal-content{
+    background: #EEF2F9;
+}
+:host /deep/ .modal-body{
+    padding: 0;
+}
+.order-list-wrapper{
+    background: #F4F5FC;
+}

@@ -1,0 +1,73 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.cache
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+/.vs/CharlotteCafe/v15/Server/sqlite3
+/.vs/CharlotteCafe/v15/.suo
+/.vs/OnlineCafe/v15
+
+bin/
+obj/
+
+OnlineCafe.Api/bin/*
+OnlineCafe.Api/obj/*
+OnlineCafe.Bot/bin/*
+OnlineCafe.Bot/obj/*
+OnlineCafe.Interfaces/bin/*
+OnlineCafe.Interfaces/obj/*
+OnlineCafe.Models/bin/*
+OnlineCafe.Models/obj/*
+OnlineCafe.Repository/bin/*
+OnlineCafe.Repository/obj/*
+OnlineCafe.Services/bin/*
+OnlineCafe.Services/obj/*
+OnlineCafe.Unity/bin/*
+OnlineCafe.Unity/obj/*
+OnlineCafe.Web/bin/*
+OnlineCafe.Web/obj/*
+
+
+.vs/OnlineCafe/DesignTimeBuild/.dtbcache
+.vs/config/applicationhost.config
+
+
+/.vs/config/applicationhost.config
+/.vs/OnlineCafe/DesignTimeBuild/.dtbcache
+/.vs/VSWorkspaceState.json
+
+.vs/

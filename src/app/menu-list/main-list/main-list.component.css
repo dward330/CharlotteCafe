@@ -1,0 +1,10 @@
+:host /deep/ .image-thumbnail{
+    max-width:80px;
+}
+:host /deep/ .image-thumbnail img{
+    max-width: 100%;
+}
+
+:host /deep/ .card-content-right{
+    width:calc(100% - 80px);
+}

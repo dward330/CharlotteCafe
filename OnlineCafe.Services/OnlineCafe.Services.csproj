@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineCafe.Interfaces\OnlineCafe.Interfaces.csproj" />
+    <ProjectReference Include="..\OnlineCafe.Models\OnlineCafe.Models.csproj" />
+    <ProjectReference Include="..\OnlineCafe.Repository\OnlineCafe.Repository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Item\" />
+  </ItemGroup>
+
+</Project>

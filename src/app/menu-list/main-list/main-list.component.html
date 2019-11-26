@@ -1,0 +1,13 @@
+<ng-container *ngIf="isPinnedList">
+  <h4>Favorite Items</h4>
+
+  <div class="bg-white rounded p-3 mt-3 mb-3 shadow-sm" *ngFor="let item of listItems">
+    <app-pinned-list-item [listItem]="item"></app-pinned-list-item>
+  </div>
+</ng-container>
+<ng-container *ngIf="!isPinnedList">
+  <h4>Menu Items</h4>
+  <div class="bg-white rounded p-3 mt-3 mb-3 shadow-sm" *ngFor="let item of listItems">
+    <app-main-list-item #mainListItem [listItem]="item"></app-main-list-item>
+  </div>
+</ng-container>

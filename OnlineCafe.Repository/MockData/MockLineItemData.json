@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "MenuItemId": 1,
+    "MenuItem": {
+      "Id": 1,
+      "MenuId": 0,
+      "Name": "Americano",
+      "Description": "...",
+      "Price": 5,
+      "Active": true,
+      "ImageUrl": null
+    },
+    "OrderId": 0,
+    "Price": 4.5,
+    "Quantity": 1,
+    "Favorite": true,
+    "ItemSize": "Grande"
+  }
+]

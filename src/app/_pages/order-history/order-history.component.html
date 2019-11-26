@@ -1,0 +1,33 @@
+<div class="" *ngIf="this.currentUser$">
+  <app-app-header></app-app-header>
+  <div class="container-fluid main-content mt-4 p-4 row">
+
+    <div class="col-12 col-md-3">
+      <div class=" bg-white shadow-sm rounded p-4 ">
+        <h4>
+          {{userInfo.profile.given_name}}  {{userInfo.profile.family_name}}
+        </h4>
+        <p>
+          <span>Email: {{userInfo.profile.unique_name}}</span>
+          <br/>
+          <span></span>
+        </p>
+        <div class="d-flex justify-content-between">
+          <span>You have
+            <strong>{{pinnedItemCount}} pinned items</strong>
+          </span>
+          <span *ngIf="showPinnedListLink" (click)="onIconClick()">
+            {{pinnedMessage}}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="mt-4 pl-2 pr-2">
+        <h4>Order History</h4>
+
+      </div>
+    </div>
+  </div>
+</div>

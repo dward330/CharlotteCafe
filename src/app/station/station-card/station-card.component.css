@@ -1,0 +1,22 @@
+.docked-image{
+    width:100%;
+    position: fixed;
+    z-index:-1;
+    top:-46px;
+    left:0;
+}
+img{
+    max-width:100%;
+    filter:blur(1px);
+}
+@media only screen and (min-width:768px){
+    .docked-image{
+        position: relative;
+        z-index:0;
+        top:0;
+        margin-bottom: 30px;
+    }
+    img{
+        filter:none;
+    }
+}

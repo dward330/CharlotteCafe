@@ -1,0 +1,3 @@
+<ng-container *ngIf="orderList">
+  <app-order-list-item *ngFor="let item of orderList.items" [item]="item" [order]="orderList"></app-order-list-item>
+</ng-container>

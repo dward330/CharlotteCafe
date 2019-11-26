@@ -1,0 +1,11 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import "~font-awesome/css/font-awesome.css";
+body{
+    background: #F4F8FE;
+    font-size:0.875rem;
+}
+.mobile-wrapper{
+    position:relative;
+    max-width:400px;
+    margin: 0 auto;
+}

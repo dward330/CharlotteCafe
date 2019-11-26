@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Unity" Version="5.8.6" />
+    <PackageReference Include="Unity.Container" Version="5.8.6" />
+    <PackageReference Include="Unity.Interception.Configuration" Version="5.1.5" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="2.0.10" />
+    <PackageReference Include="Unity.RegistrationByConvention" Version="2.1.5" />
+    <PackageReference Include="Unity.ServiceLocation" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineCafe.Interfaces\OnlineCafe.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

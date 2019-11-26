@@ -1,0 +1,13 @@
+<div class="d-flex ">
+    <div class="image-thumbnail">
+        <img src="{{listItem.imageUrl}}">
+    </div>
+    <div class="pl-3 card-content-right">
+        <div><strong>{{listItem.name}}</strong></div>
+        <div>{{listItem.description}}</div>
+        <div class="d-flex justify-content-between text-primary align-items-center">
+            ${{listItem.price}}
+            <fa name="plus-circle" size="2x" (click)="setCurrentItem()"></fa>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="d-flex ">
+        <div class="image-thumbnail">
+            <img src="{{listItem.menuItem.imageUrl}}">
+        </div>
+        <div class="pl-3 card-content-right">
+            <div><strong>{{listItem.menuItem.name}}</strong></div>
+            <div>Qty: {{listItem.quantity}} - Size: {{listItem.size}}</div>
+            <div>{{listItem.additionalInstructions}}</div>
+            <div class="d-flex justify-content-between text-primary align-items-center">
+                ${{listItem.menuItem.price}}
+                <fa name="cart-plus" size="2x" (click)="addToOrder()"></fa>
+            </div>
+        </div>
+    </div>

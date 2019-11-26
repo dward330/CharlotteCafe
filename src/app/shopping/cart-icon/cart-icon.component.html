@@ -1,0 +1,6 @@
+<a [routerLink]="[ {outlets: { modal: 'checkout' } } ]"
+  *ngIf="totalItemsInCart"
+  class="d-flex justify-content-center align-items-center rounded-circle bg-white text-primary">
+  <fa name="shopping-cart"></fa>
+  <span class="rounded-circle d-flex justify-content-center align-items-center bg-info text-white" *ngIf="totalItemsInCart">{{totalItemsInCart}}</span>
+</a>

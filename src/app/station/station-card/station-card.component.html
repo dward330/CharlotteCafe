@@ -1,0 +1,23 @@
+<div *ngIf="station">
+  <div class="docked-image">
+    <!-- <img [src]="station.imageUrl" /> -->
+    <img src="https://c1.staticflickr.com/7/6182/6052083456_38ffd14f11_b.jpg"/>
+  </div>
+  <h4>
+    {{station.name}}
+    Coffee Station
+  </h4>
+  <p>
+    <span>Hours: 11:00 am to 4:00 pm</span>
+    <br/>
+    <span>Current wait: 5 minutes</span>
+  </p>
+  <div class="d-flex justify-content-between">
+    <span>You have
+      <strong>{{pinnedItemCount}} fav items</strong>
+    </span>
+    <span *ngIf="showPinnedListLink" (click)="onIconClick()">
+      {{pinnedMessage}}
+    </span>
+  </div>
+</div>

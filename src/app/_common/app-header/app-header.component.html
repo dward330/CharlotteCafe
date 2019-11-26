@@ -1,0 +1,17 @@
+<header>
+  <div class="navbar navbar-dark fixed-top bg-white">
+    <div class="container-fluid d-flex justify-content-between">
+      <div>
+        <a href="" *ngIf="isAuthenticated"  [routerLink]="['/orderhistory']">
+          <fa class="mr-2" name="cog"></fa>
+          <span>Welcome {{userInfo.profile.given_name}}</span>
+        </a>
+      </div>
+      <div class="d-flex align-items-center">
+        <a *ngIf="!isAuthenticated" href="" [routerLink]="['/login']">Login</a>
+        <a *ngIf="isAuthenticated" href="" class="mr-4" (click)="logout()">Logout</a>
+        <app-cart-icon class="float-right"></app-cart-icon>
+      </div>
+    </div>
+  </div>
+</header>

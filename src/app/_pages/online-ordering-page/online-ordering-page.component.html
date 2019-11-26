@@ -1,0 +1,38 @@
+<div class="" *ngIf="this.currentUser$">
+  <app-app-header></app-app-header>
+  <div class="container-fluid main-content mt-4 p-4 row">
+
+    <div class="col-12 col-md-3">
+      <div class=" bg-white shadow-sm rounded p-4 ">
+        <app-station-card *ngIf="this.currentStation$" [pinnedItemCount]="pinnedItemCount" [pinnedSectionOpen]="showPinnedList" [station]="this.currentStation$ "
+          [showPinnedListLink]="hasPinnedItems"></app-station-card>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div *ngIf="showPinnedList" class="mt-4 pl-2 pr-2">
+        <app-main-list [listItems]="pinnedListItems" [type]="pinnedList">
+        </app-main-list>
+      </div>
+      <div class="mt-4 pl-2 pr-2" *ngIf="this.currentStation">
+        <app-main-list [listItems]="this.currentStation">
+        </app-main-list>
+      </div>
+    </div>
+
+    <div *ngIf="currentItem && isSmallScreen">
+      <app-modal>
+        <div modal-body="body">
+          <app-order-list-item-options [item]="currentItem" [itemChange]="add"></app-order-list-item-options>
+        </div>
+      </app-modal>
+    </div>
+
+    <div class="bg-white rounded p-4 col-md-3" *ngIf="currentItem && !isSmallScreen">
+      <app-order-list-item-options [item]="currentItem" [itemChange]="add"></app-order-list-item-options>
+    </div>
+
+    <router-outlet name="modal"> </router-outlet>
+
+  </div>
+</div>

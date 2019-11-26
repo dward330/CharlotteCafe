@@ -1,0 +1,63 @@
+.item-title{
+    text-align: center;
+}
+ .item-title h5 {
+    font-weight: normal;
+ }
+
+ .blue {
+    color: #007bff;
+ }
+
+ .selected {
+     color:#00cc00;
+ }
+
+ i:hover {
+    background-color:#F0F0F0;
+ }
+
+ .that-increment-thing {
+    max-width: 200px;
+ }
+
+ .that-increment-thing > * {
+     float: left;
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+ .that-increment-thing input{
+     width: 20px;
+     margin-left: 10px;
+     margin-right: 10px;
+     text-align: center;
+ }
+
+.customize {
+    height: auto;
+    clear: both;
+
+}
+.customize > div {
+    color: #007bff;
+}
+.customize label {
+    display: block;
+    color: #d6d7d8;
+}
+
+#additionalRequestsTextarea
+{
+    background: #F0F0F0;
+}
+
+button {
+    /* width: 43%; */
+    margin: 10px;
+}
+
+.form-check-input {
+ display: block;
+ color: red;
+}
+
